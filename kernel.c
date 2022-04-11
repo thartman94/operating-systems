@@ -1,7 +1,4 @@
-/* static char* const VGA_MEMORY = (char*) 0xb8000;
-
-static const int VGA_WIDTH = 80;
-static const int VGA_HEIGHT = 25; */
+# include "./include/console.h"
 
 void kernel_early(void) {
 }
