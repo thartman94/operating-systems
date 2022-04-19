@@ -20,9 +20,9 @@ typedef enum {
         WHITE
 } Color;
 
-static char* const VGA_MEMORY;
-static int VGA_WIDTH;
-static int VGA_HEIGHT;
+static char* const VGA_MEMORY = (char*) 0xb8000;
+static int VGA_WIDTH = 80;
+static int VGA_HEIGHT = 25;
 
 void print_character(char);
 void print_string(char*);

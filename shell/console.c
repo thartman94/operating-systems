@@ -1,10 +1,6 @@
 # include "../include/console.h"
 
-static char* const VGA_MEMORY = (char*) 0xb8000;
-static int VGA_WIDTH = 80;
-static int VGA_HEIGHT = 25;
-
-unsigned static int vga_position = 0;
+unsigned int vga_position = 0;
 unsigned int terminal_font_color = GRAY;
 
 void set_terminal_font_color(Color color) {
